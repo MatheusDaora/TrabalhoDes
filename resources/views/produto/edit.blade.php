@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('titulo', 'Editar Produto - TechAssist')
+@section('titulo', 'Editar Produto - TechForge')
 
 @section('content')
 <div class="max-w-3xl mx-auto space-y-6">
@@ -78,10 +78,10 @@
                 </select>
             </div>
 
-            <!-- Imagem Atual & Upload Novo (Critério 4) -->
+            <!-- Imagem Atual & Upload Novo -->
             <div class="sm:col-span-2">
                 <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                    Imagem do Produto (Critério 4 - Upload e Visualização na Edição)
+                    Imagem do Produto 
                 </label>
                 
                 @if($produto->imagem)

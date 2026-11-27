@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('titulo', 'Editar O.S. #' . $os->id_os . ' - TechAssist')
+@section('titulo', 'Editar O.S. #' . $os->id_os . ' - TechForge')
 
 @section('content')
 <div class="max-w-4xl mx-auto space-y-6">
@@ -41,7 +41,7 @@
 
                 <div>
                     <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1" for="id_equipamento">
-                        Equipamento (1:1) <span class="text-rose-500">*</span>
+                        Equipamento <span class="text-rose-500">*</span>
                     </label>
                     <select name="id_equipamento" id="id_equipamento" required class="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-blue-600 focus:outline-none transition bg-white">
                         @foreach($equipamentos as $eq)

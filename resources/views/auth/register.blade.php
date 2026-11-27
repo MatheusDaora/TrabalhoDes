@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - TechAssist</title>
+    <title>Cadastro - TechForge</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="h-full flex items-center justify-center p-4 bg-slate-900 text-slate-800">
@@ -13,7 +13,7 @@
             <div class="inline-flex w-14 h-14 rounded-2xl bg-blue-600 items-center justify-center font-black text-2xl text-white shadow-lg shadow-blue-500/30 mb-3">
                 TA
             </div>
-            <h1 class="text-2xl font-black text-white tracking-tight">TechAssist</h1>
+            <h1 class="text-2xl font-black text-white tracking-tight">TechForge</h1>
             <p class="text-xs uppercase tracking-widest font-bold text-blue-400 mt-0.5">Sistema de Assistência de Computadores</p>
         </div>
 

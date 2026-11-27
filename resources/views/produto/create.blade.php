@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('titulo', 'Novo Produto - TechAssist')
+@section('titulo', 'Novo Produto - TechForge')
 
 @section('content')
 <div class="max-w-3xl mx-auto space-y-6">
@@ -77,10 +77,10 @@
                 </select>
             </div>
 
-            <!-- Upload de Imagem (Critério 4) -->
+            <!-- Upload de Imagem -->
             <div class="sm:col-span-2">
                 <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1" for="imagem">
-                    Foto do Produto (Critério 4 - Upload de Arquivo)
+                    Foto do Produto
                 </label>
                 <input type="file" name="imagem" id="imagem" accept="image/*"
                        class="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-blue-600 focus:outline-none transition file:mr-4 file:py-1.5 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">

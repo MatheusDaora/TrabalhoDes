@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('titulo', 'Pedido #' . $pedido->id_pedido . ' - TechAssist')
+@section('titulo', 'Pedido #' . $pedido->id_pedido . ' - TechForge')
 
 @section('content')
 <div class="max-w-4xl mx-auto space-y-6">
@@ -29,7 +29,7 @@
             <div>
                 <div class="flex items-center gap-2 mb-1">
                     <span class="w-8 h-8 rounded-lg bg-blue-600 text-white font-black flex items-center justify-center text-sm">TA</span>
-                    <span class="text-xl font-black text-slate-900">TechAssist Informática</span>
+                    <span class="text-xl font-black text-slate-900">TechForge Informática</span>
                 </div>
                 <p class="text-xs text-slate-500">Comprovante de Compra / Pedido de Peças</p>
                 <p class="text-xs text-slate-400">Chapecó - SC &bull; Venda Direta</p>

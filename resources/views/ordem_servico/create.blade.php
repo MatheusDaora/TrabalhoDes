@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('titulo', 'Abrir Nova O.S. - TechAssist')
+@section('titulo', 'Abrir Nova O.S. - TechForge')
 
 @section('content')
 <div class="max-w-4xl mx-auto space-y-6">
@@ -17,7 +17,7 @@
     <form action="{{ route('ordem_servico.store') }}" method="POST" class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs space-y-6">
         @csrf
 
-        <!-- Vínculos / Relacionamentos (Critério 7) -->
+        <!-- Vínculos / Relacionamentos  -->
         <div>
             <h2 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4 pb-2 border-b border-slate-100 flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-blue-600"></span>
@@ -25,10 +25,10 @@
             </h2>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                <!-- Select Cliente (1:N) -->
+                <!-- Select Cliente  -->
                 <div>
                     <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1" for="id_cliente">
-                        Cliente Solicitante (1:N) <span class="text-rose-500">*</span>
+                        Cliente Solicitante <span class="text-rose-500">*</span>
                     </label>
                     <select name="id_cliente" id="id_cliente" required class="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-blue-600 focus:outline-none transition bg-white">
                         <option value="">Selecione o cliente...</option>
@@ -40,7 +40,7 @@
                     </select>
                 </div>
 
-                <!-- Select Equipamento (1:1 com O.S.) -->
+                <!-- Select Equipamento  -->
                 <div>
                     <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1" for="id_equipamento">
                         Equipamento do Cliente (1:1) <span class="text-rose-500">*</span>
@@ -55,10 +55,10 @@
                     </select>
                 </div>
 
-                <!-- Select Funcionário / Técnico (1:N) -->
+                <!-- Select Funcionário / Técnico -->
                 <div>
                     <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1" for="id_funcionario">
-                        Técnico Responsável (1:N) <span class="text-rose-500">*</span>
+                        Técnico Responsável  <span class="text-rose-500">*</span>
                     </label>
                     <select name="id_funcionario" id="id_funcionario" required class="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-blue-600 focus:outline-none transition bg-white">
                         <option value="">Selecione o técnico...</option>

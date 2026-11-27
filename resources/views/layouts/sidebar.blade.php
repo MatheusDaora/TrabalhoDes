@@ -6,7 +6,7 @@
                 TA
             </div>
             <div>
-                <h2 class="text-lg font-black tracking-tight text-white leading-tight">TechAssist</h2>
+                <h2 class="text-lg font-black tracking-tight text-white leading-tight">TechForge</h2>
                 <span class="text-[10px] uppercase font-bold tracking-wider text-blue-400 block">Assistência Técnica</span>
             </div>
         </div>

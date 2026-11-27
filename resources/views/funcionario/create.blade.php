@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('titulo', 'Novo Funcionário - TechAssist')
+@section('titulo', 'Novo Funcionário - TechForge')
 
 @section('content')
 <div class="max-w-3xl mx-auto space-y-6">

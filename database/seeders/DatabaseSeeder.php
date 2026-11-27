@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
     {
         // 1. Usuário Administrador para Sessão e Apresentação
         User::firstOrCreate(
-            ['email' => 'admin@techassist.com'],
+            ['email' => 'admin@TechForge.com'],
             [
                 'name' => 'Professor Avaliador',
                 'password' => Hash::make('admin123'),
@@ -180,25 +180,25 @@ class DatabaseSeeder extends Seeder
         $funcionariosDados = [
             [
                 'nome' => 'Carlos Eduardo Silva',
-                'email' => 'carlos.silva@techassist.com',
+                'email' => 'carlos.silva@TechForge.com',
                 'perfil' => 'Técnico de Manutenção',
                 'data_admissao' => '2023-03-15',
             ],
             [
                 'nome' => 'Mariana Ribeiro Santos',
-                'email' => 'mariana.santos@techassist.com',
+                'email' => 'mariana.santos@TechForge.com',
                 'perfil' => 'Técnica de Hardware',
                 'data_admissao' => '2023-08-01',
             ],
             [
                 'nome' => 'Lucas Pereira Lima',
-                'email' => 'lucas.lima@techassist.com',
+                'email' => 'lucas.lima@TechForge.com',
                 'perfil' => 'Atendente Técnico',
                 'data_admissao' => '2024-02-10',
             ],
             [
                 'nome' => 'Ana Paula Souza',
-                'email' => 'ana.souza@techassist.com',
+                'email' => 'ana.souza@TechForge.com',
                 'perfil' => 'Gerente de Laboratório',
                 'data_admissao' => '2022-01-20',
             ],

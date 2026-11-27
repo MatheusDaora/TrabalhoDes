@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('titulo', 'Gráficos Analíticos - TechAssist')
+@section('titulo', 'Gráficos Analíticos - TechForge')
 
 @section('content')
 <div class="space-y-6">
@@ -16,7 +16,7 @@
         </div>
     </div>
 
-    <!-- Grid dos 2 Gráficos Obrigatórios -->
+    <!-- Grid dos 2 Gráficos -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <!-- Gráfico 1: Rosca / Doughnut (Ordens de Serviço por Status) -->
         <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs space-y-4">

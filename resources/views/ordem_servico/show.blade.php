@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('titulo', 'Ordem de Serviço #' . $os->id_os . ' - TechAssist')
+@section('titulo', 'Ordem de Serviço #' . $os->id_os . ' - TechForge')
 
 @section('content')
 <div class="max-w-4xl mx-auto space-y-6">
@@ -24,14 +24,14 @@
         </div>
     </div>
 
-    <!-- Comprovante / Ficha Técnica (Estilizado para visualização e impressão) -->
+    <!-- Comprovante / Ficha Técnica -->
     <div class="bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-xs space-y-6 print:border-none print:shadow-none print:p-0">
         <!-- Cabeçalho do Documento -->
         <div class="flex items-start justify-between border-b-2 border-blue-600 pb-5">
             <div>
                 <div class="flex items-center gap-2 mb-1">
                     <span class="w-8 h-8 rounded-lg bg-blue-600 text-white font-black flex items-center justify-center text-sm">TA</span>
-                    <span class="text-xl font-black text-slate-900">TechAssist Informática</span>
+                    <span class="text-xl font-black text-slate-900">TechForge Informática</span>
                 </div>
                 <p class="text-xs text-slate-500">Laboratório Especializado de Assistência Técnica</p>
                 <p class="text-xs text-slate-400">Chapecó - Santa Catarina &bull; Telefone: (49) 3322-1000</p>
@@ -43,10 +43,10 @@
             </div>
         </div>
 
-        <!-- Dados do Cliente e Equipamento (Diagrama: 1:N com Cliente e 1:1 com Equipamento) -->
+        <!-- Dados do Cliente e Equipamento -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
             <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-                <span class="text-[10px] uppercase font-bold text-blue-600 block mb-2 tracking-wider">Dados do Cliente (1:N)</span>
+                <span class="text-[10px] uppercase font-bold text-blue-600 block mb-2 tracking-wider">Dados do Cliente</span>
                 <p class="text-sm font-bold text-slate-900">{{ $os->cliente->nome_razao_social ?? 'Cliente não informado' }}</p>
                 <p class="text-slate-600 mt-1">CPF/CNPJ: <span class="font-mono font-medium">{{ $os->cliente->cpf_cnpj ?? '-' }}</span></p>
                 <p class="text-slate-600">Telefone: {{ $os->cliente->telefone ?? '-' }}</p>
@@ -54,7 +54,7 @@
             </div>
 
             <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-                <span class="text-[10px] uppercase font-bold text-blue-600 block mb-2 tracking-wider">Equipamento em Reparo (Relacionamento 1:1)</span>
+                <span class="text-[10px] uppercase font-bold text-blue-600 block mb-2 tracking-wider">Equipamento em Reparo</span>
                 <p class="text-sm font-bold text-slate-900">{{ $os->equipamento->modelo ?? '-' }}</p>
                 <p class="text-slate-600 mt-1">Marca: <span class="font-medium">{{ $os->equipamento->marca ?? '-' }}</span></p>
                 <p class="text-slate-600">Número de Série: <span class="font-mono font-semibold">{{ $os->equipamento->numero_serie ?? '-' }}</span></p>

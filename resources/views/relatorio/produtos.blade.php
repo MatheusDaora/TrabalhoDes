@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
-@section('titulo', 'Relatório de Estoque - TechAssist')
+@section('titulo', 'Relatório de Estoque - TechForge')
 
 @section('content')
 <div class="space-y-6">
-    <!-- Barra Superior de Controle (Oculta na impressão) -->
+    <!-- Barra Superior de Controle -->
     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 no-print">
         <div>
             <h1 class="text-2xl font-black text-slate-900 tracking-tight">Relatório de Produtos e Estoque</h1>
@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <!-- Filtro de Categoria (Oculto na impressão) -->
+    <!-- Filtro de Categoria -->
     <div class="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-xs no-print">
         <form method="GET" action="{{ route('relatorio.produtos') }}" class="flex items-center gap-3">
             <label class="text-xs font-bold text-slate-700 shrink-0">Filtrar por Categoria:</label>
@@ -44,7 +44,7 @@
         <!-- Cabeçalho Institucional -->
         <div class="flex items-start justify-between border-b-2 border-slate-900 pb-4">
             <div>
-                <h2 class="text-xl font-black text-slate-900">TechAssist - Assistência Técnica Especializada</h2>
+                <h2 class="text-xl font-black text-slate-900">TechForge - Assistência Técnica Especializada</h2>
                 <p class="text-xs font-bold text-slate-700">Inventário Físico e Financeiro de Produtos em Estoque</p>
                 <p class="text-[11px] text-slate-400">Emissão: {{ date('d/m/Y H:i:s') }} &bull; Sistema Acadêmico Integrado IFSC</p>
             </div>
@@ -114,7 +114,7 @@
 
         <!-- Rodapé do Relatório -->
         <div class="pt-6 border-t border-slate-200 text-center text-[10px] text-slate-400">
-            TechAssist &bull; Documento gerado eletronicamente para fins acadêmicos e comprobatórios &bull; IFSC Câmpus Chapecó
+            TechForge &bull; Documento gerado eletronicamente para fins acadêmicos e comprobatórios &bull; IFSC Câmpus Chapecó
         </div>
     </div>
 </div>

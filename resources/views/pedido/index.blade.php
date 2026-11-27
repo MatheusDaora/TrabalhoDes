@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('titulo', 'Pedidos de Peças e Vendas - TechAssist')
+@section('titulo', 'Pedidos de Peças e Vendas - TechForge')
 
 @section('content')
 <div class="space-y-6">
@@ -16,7 +16,7 @@
         </a>
     </div>
 
-    <!-- Busca e Filtros (Critério 5) -->
+    <!-- Busca e Filtros -->
     <div class="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-xs">
         <form method="GET" action="{{ route('pedido.index') }}" class="grid grid-cols-1 sm:grid-cols-4 gap-3">
             <div class="sm:col-span-2 relative">
@@ -49,17 +49,17 @@
         </form>
     </div>
 
-    <!-- Tabela de Pedidos (Critério 7: Relacionamentos com Cliente e Endereço) -->
+    <!-- Tabela de Pedidos -->
     <div class="bg-white rounded-2xl border border-slate-200/80 shadow-xs overflow-hidden">
         <div class="overflow-x-auto">
             <table class="w-full text-left text-xs">
                 <thead>
                     <tr class="bg-slate-50 border-b border-slate-100 text-slate-400 uppercase tracking-wider font-bold">
                         <th class="py-3 px-4">Pedido #</th>
-                        <th class="py-3 px-4">Cliente (1:N)</th>
+                        <th class="py-3 px-4">Cliente</th>
                         <th class="py-3 px-4">Data</th>
                         <th class="py-3 px-4">Entrega</th>
-                        <th class="py-3 px-4 text-center">Itens (1:N)</th>
+                        <th class="py-3 px-4 text-center">Itens</th>
                         <th class="py-3 px-4 text-center">Status</th>
                         <th class="py-3 px-4 text-right">Valor Total</th>
                         <th class="py-3 px-4 text-right">Ações</th>

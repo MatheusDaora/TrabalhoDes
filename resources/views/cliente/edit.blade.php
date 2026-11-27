@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('titulo', 'Editar Cliente - TechAssist')
+@section('titulo', 'Editar Cliente - TechForge')
 
 @section('content')
 <div class="max-w-4xl mx-auto space-y-6">

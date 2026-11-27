@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('titulo', 'Novo Pedido de Peças - TechAssist')
+@section('titulo', 'Novo Pedido de Peças - TechForge')
 
 @section('content')
 <div class="max-w-4xl mx-auto space-y-6">
@@ -27,7 +27,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div class="sm:col-span-2">
                     <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1" for="id_cliente">
-                        Cliente Comprador (1:N) <span class="text-rose-500">*</span>
+                        Cliente Comprador <span class="text-rose-500">*</span>
                     </label>
                     <select name="id_cliente" id="id_cliente" required class="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-blue-600 focus:outline-none transition bg-white">
                         <option value="">Selecione o cliente...</option>
@@ -87,12 +87,12 @@
             </div>
         </div>
 
-        <!-- Itens do Pedido (Relacionamento 1:N Item_Pedido) -->
+        <!-- Itens do Pedido -->
         <div>
             <div class="flex items-center justify-between pb-2 border-b border-slate-100 mb-4">
                 <h2 class="text-sm font-bold text-slate-900 uppercase tracking-wider flex items-center gap-2">
                     <span class="w-2 h-2 rounded-full bg-blue-600"></span>
-                    Itens do Pedido (Diagrama: 1 Pedido &rarr; N Itens)
+                    Itens do Pedido
                 </h2>
                 <button type="button" onclick="adicionarLinhaItem()" class="px-3 py-1 bg-blue-50 text-blue-700 rounded-lg text-xs font-bold hover:bg-blue-100 transition">
                     + Adicionar Outro Produto

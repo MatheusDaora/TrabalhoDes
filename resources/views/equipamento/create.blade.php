@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('titulo', 'Novo Equipamento - TechAssist')
+@section('titulo', 'Novo Equipamento - TechForge')
 
 @section('content')
 <div class="max-w-3xl mx-auto space-y-6">
@@ -31,7 +31,6 @@
                         </option>
                     @endforeach
                 </select>
-                <p class="text-[11px] text-slate-400 mt-1">Diagrama: 1 Cliente possui N Equipamentos cadastrados.</p>
             </div>
 
             <div class="sm:col-span-2">

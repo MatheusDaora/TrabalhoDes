@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('titulo', 'Detalhes do Cliente - TechAssist')
+@section('titulo', 'Detalhes do Cliente - TechForge')
 
 @section('content')
 <div class="space-y-6">
@@ -52,7 +52,6 @@
         <div class="flex items-center justify-between pb-3 border-b border-slate-100">
             <div>
                 <h2 class="text-base font-bold text-slate-900">Endereços Registrados</h2>
-                <p class="text-xs text-slate-400">Relacionamento 1:N &bull; Um cliente pode possuir múltiplos endereços cadastrados.</p>
             </div>
             <button onclick="document.getElementById('formNovoEndereco').classList.toggle('hidden')" 
                     class="px-3 py-1.5 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg text-xs font-bold transition">

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('titulo', 'Novo Cliente - TechAssist')
+@section('titulo', 'Novo Cliente - TechForge')
 
 @section('content')
 <div class="max-w-4xl mx-auto space-y-6">
@@ -90,7 +90,7 @@
         <div>
             <h2 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4 pb-2 border-b border-slate-100 flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-blue-600"></span>
-                Endereço Principal (Diagrama: 1 Cliente &rarr; N Endereços)
+                Endereço Principal
             </h2>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">

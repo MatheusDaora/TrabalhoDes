@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('titulo', 'Dashboard - TechAssist')
+@section('titulo', 'Dashboard - TechForge')
 
 @section('content')
 <div class="space-y-6">
@@ -108,7 +108,7 @@
 
     <!-- Seção Inferior: Últimas Ordens e Alerta de Estoque Baixo -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <!-- Tabela das Últimas O.S. (2 colunas) -->
+        <!-- Tabela das Últimas O.S. -->
         <div class="lg:col-span-2 bg-white rounded-2xl border border-slate-200/80 shadow-xs p-6">
             <div class="flex items-center justify-between mb-4">
                 <h2 class="text-base font-bold text-slate-900">Últimas Ordens de Serviço</h2>

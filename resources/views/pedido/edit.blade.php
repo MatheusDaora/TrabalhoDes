@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('titulo', 'Editar Pedido #' . $pedido->id_pedido . ' - TechAssist')
+@section('titulo', 'Editar Pedido #' . $pedido->id_pedido . ' - TechForge')
 
 @section('content')
 <div class="max-w-3xl mx-auto space-y-6">

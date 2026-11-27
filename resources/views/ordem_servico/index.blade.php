@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('titulo', 'Ordens de Serviço - TechAssist')
+@section('titulo', 'Ordens de Serviço - TechForge')
 
 @section('content')
 <div class="space-y-6">
@@ -16,7 +16,7 @@
         </a>
     </div>
 
-    <!-- Filtros e Busca Funcional (Critério 5) -->
+    <!-- Filtros e Busca Funcional -->
     <div class="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-xs">
         <form method="GET" action="{{ route('ordem_servico.index') }}" class="grid grid-cols-1 sm:grid-cols-4 gap-3">
             <div class="sm:col-span-2 relative">
@@ -50,16 +50,16 @@
         </form>
     </div>
 
-    <!-- Tabela de O.S. (Critério 7: Relacionamentos 1:1 e 1:N exibindo nomes em vez de IDs) -->
+    <!-- Tabela de O.S. -->
     <div class="bg-white rounded-2xl border border-slate-200/80 shadow-xs overflow-hidden">
         <div class="overflow-x-auto">
             <table class="w-full text-left text-xs">
                 <thead>
                     <tr class="bg-slate-50 border-b border-slate-100 text-slate-400 uppercase tracking-wider font-bold">
                         <th class="py-3 px-4">O.S.</th>
-                        <th class="py-3 px-4">Cliente (1:N)</th>
-                        <th class="py-3 px-4">Equipamento (1:1)</th>
-                        <th class="py-3 px-4">Técnico Resp. (1:N)</th>
+                        <th class="py-3 px-4">Cliente </th>
+                        <th class="py-3 px-4">Equipamento</th>
+                        <th class="py-3 px-4">Técnico Resp.</th>
                         <th class="py-3 px-4">Abertura</th>
                         <th class="py-3 px-4 text-center">Status</th>
                         <th class="py-3 px-4 text-right">Orçamento</th>
@@ -74,16 +74,16 @@
                                     #{{ $os->id_os }}
                                 </a>
                             </td>
-                            <!-- Exibição do Nome do Cliente em vez de ID (Critério 7) -->
+                            <!-- Exibição do Nome do Cliente em vez de ID -->
                             <td class="py-3.5 px-4 font-bold text-slate-800">
                                 {{ $os->cliente->nome_razao_social ?? 'Cliente #' . $os->id_cliente }}
                             </td>
-                            <!-- Exibição do Nome/Modelo do Equipamento (Critério 7 - Relacionamento 1:1) -->
+                            <!-- Exibição do Nome/Modelo do Equipamento -->
                             <td class="py-3.5 px-4 text-slate-600">
                                 <span class="font-semibold block text-slate-800">{{ $os->equipamento->modelo ?? '-' }}</span>
                                 <span class="text-[10px] text-slate-400 font-mono">S/N: {{ $os->equipamento->numero_serie ?? '-' }}</span>
                             </td>
-                            <!-- Exibição do Nome do Funcionário em vez de ID (Critério 7) -->
+                            <!-- Exibição do Nome do Funcionário em vez de ID -->
                             <td class="py-3.5 px-4 text-slate-600">
                                 {{ $os->funcionario->nome ?? 'Técnico #' . $os->id_funcionario }}
                             </td>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('titulo', 'Equipamentos de Clientes - TechAssist')
+@section('titulo', 'Equipamentos de Clientes - TechForge')
 
 @section('content')
 <div class="space-y-6">
@@ -16,7 +16,7 @@
         </a>
     </div>
 
-    <!-- Busca Funcional (Critério 5) -->
+    <!-- Busca Funcional -->
     <div class="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-xs">
         <form method="GET" action="{{ route('equipamento.index') }}" class="flex flex-col sm:flex-row items-center gap-3">
             <div class="relative flex-1 w-full">
@@ -37,7 +37,7 @@
         </form>
     </div>
 
-    <!-- Tabela com Miniatura de Imagem (Critério 4) e Nome do Cliente em vez de ID (Critério 7) -->
+    <!-- Tabela com Miniatura de Imagem e Nome do Cliente em vez de ID  -->
     <div class="bg-white rounded-2xl border border-slate-200/80 shadow-xs overflow-hidden">
         <div class="overflow-x-auto">
             <table class="w-full text-left text-xs">
@@ -75,7 +75,7 @@
                             <td class="py-3.5 px-4 font-mono text-slate-600">
                                 {{ $eq->numero_serie }}
                             </td>
-                            <!-- Exibição do Nome do Cliente em vez de ID (Critério 7) -->
+                            <!-- Exibição do Nome do Cliente em vez de ID -->
                             <td class="py-3.5 px-4">
                                 @if($eq->cliente)
                                     <a href="{{ route('cliente.show', $eq->cliente->id_cliente) }}" class="font-bold text-blue-600 hover:underline">

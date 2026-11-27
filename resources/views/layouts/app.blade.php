@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('titulo', 'TechAssist - Gestão de Assistência Técnica')</title>
+    <title>@yield('titulo', 'TechForge - Gestão de Assistência Técnica')</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -29,7 +29,7 @@
                 TA
             </div>
             <div>
-                <span class="font-bold text-base block leading-none">TechAssist</span>
+                <span class="font-bold text-base block leading-none">TechForge</span>
                 <span class="text-[10px] text-blue-300 uppercase tracking-wider font-medium">Assistência Técnica</span>
             </div>
         </div>
