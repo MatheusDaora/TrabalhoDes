@@ -21,7 +21,7 @@
         <div>
             <h2 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4 pb-2 border-b border-slate-100 flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-blue-600"></span>
-                Vínculos do Atendimento (Critério 7: Relacionamentos 1:1 e 1:N com Selects)
+                Vínculos do Atendimento
             </h2>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -43,7 +43,7 @@
                 <!-- Select Equipamento  -->
                 <div>
                     <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1" for="id_equipamento">
-                        Equipamento do Cliente (1:1) <span class="text-rose-500">*</span>
+                        Equipamento do Cliente <span class="text-rose-500">*</span>
                     </label>
                     <select name="id_equipamento" id="id_equipamento" required class="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-blue-600 focus:outline-none transition bg-white">
                         <option value="">Selecione o equipamento...</option>
